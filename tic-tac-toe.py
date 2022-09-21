@@ -39,7 +39,7 @@ def print_GameBoard():
 index_list = []
 def take_input(player_name):
     X = int(input(f'{player_name}, Please enter a number(1-9): '))
-    while X >= 10 or X < 0:
+    while X >= 10 or X <= 0:
       print('\nThe number you entered is out of range.')
       X = int(input(f'{player_name}, Please enter a number(1-9): '))
 
