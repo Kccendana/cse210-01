@@ -1,3 +1,5 @@
+import sys
+
 '''
 Tic-tac-toe Game
 Katherine Cendana
@@ -63,7 +65,7 @@ def check_Winner(player_One, player_Two):
   num_list[0] == num_list[4] == num_list[8] == "X" or
   num_list[2] == num_list[4] == num_list[6] == "X" ):
     print(f'Congratulations, {player_One}. You won!')
-    pass
+    sys.exit()
 
   elif (num_list[0] == num_list[1] == num_list[2] == "O" or
   num_list[3] == num_list[4] == num_list[5] == "O" or
@@ -74,7 +76,7 @@ def check_Winner(player_One, player_Two):
   num_list[0] == num_list[4] == num_list[8] == "O" or
   num_list[2] == num_list[4] == num_list[6] == "O" ):
     print(f'Congratulations, {player_Two}. You won!')
-    pass
+    sys.exit()
 
 
 def main():
